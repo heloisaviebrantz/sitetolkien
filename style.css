@@ -1,6 +1,6 @@
  :root{
     --verde1:#e8f5e9;
-    --verde2:#81c784;
+    --verde2:#122e4b;
     --verde3:#388e3c;
     --verde4:#1b5e20;
     --texto:#222;
@@ -18,7 +18,7 @@ header{
     text-align:center;
     padding:30px;
     background:var(--verde3);
-    color:white;
+    color:rgb(18, 52, 94);
 }
 
 .botoes{
