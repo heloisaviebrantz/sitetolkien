@@ -2,7 +2,7 @@
     --azul1:#95c4c6;
     --azul2:#847905;
     --azul3:#0b5587;
-    --verde4:#1b5e20;
+    --azul4:#0d2249;
     --texto:#222;
 }
 
@@ -17,7 +17,7 @@ body{
 header{
     text-align:center;
     padding:30px;
-    background:var(--verde3);
+    background:var(--azul3);
     color:rgb(18, 52, 94);
 }
 
@@ -75,16 +75,16 @@ footer{
 }
 
 .noturno{
-    background:#102510;
+    background:#020a36;
     color:#e8ffe8;
 }
 
 .noturno .amizade{
-    background:#1c351c;
+    background:#03135d;
 }
 
 .noturno header{
-    background:#0c3b0c;
+    background:#077c89;
 }
 
 .noturno footer{
