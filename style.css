@@ -9,7 +9,7 @@
 body{
     margin:0;
     font-family:Arial, sans-serif;
-    background:var(--verde1);
+    background:var(--azul1);
     color:var(--texto);
     transition:0.4s;
 }
@@ -70,7 +70,7 @@ main{
 footer{
     text-align:center;
     padding:20px;
-    background:var(--verde4);
+    background:var(--azul4);
     color:white;
 }
 
