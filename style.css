@@ -104,3 +104,103 @@ footer{
     }
 
 } 
+
+.cabecalho {
+    min-height: 340px;
+    padding: 48px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            rgba(12, 35, 29, 0.60),
+            rgba(12, 35, 29, 0.82)
+        ),
+        url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center 55%;
+    background-repeat: no-repeat;
+}
+
+.cabecalho-conteudo {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cabecalho-detalhe {
+    margin-bottom: 14px;
+    color: #d5dfd4;
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    font-weight: 600;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.3rem, 6vw, 4.2rem);
+    font-weight: 500;
+    line-height: 1.15;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+}
+
+.cabecalho .subtitulo {
+    margin-top: 16px;
+    color: #e4e9df;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1rem, 2.5vw, 1.35rem);
+}
+
+.controles-acessibilidade {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.controles-acessibilidade button {
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 8px;
+    background: rgba(15, 45, 36, 0.72);
+    color: #ffffff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.controles-acessibilidade button:hover {
+    background: rgba(50, 87, 69, 0.95);
+    transform: translateY(-2px);
+}
+
+.controles-acessibilidade button:focus-visible {
+    outline: 3px solid #e5d5a4;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        min-height: 320px;
+        padding: 38px 16px;
+    }
+
+    .cabecalho-detalhe {
+        letter-spacing: 0.12em;
+    }
+
+    .controles-acessibilidade {
+        gap: 8px;
+    }
+
+    .controles-acessibilidade button {
+        padding: 9px 11px;
+    }
+}
+
