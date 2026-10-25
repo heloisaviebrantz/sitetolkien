@@ -202,6 +202,52 @@ footer{
     }
 
     .controles-acessibilidade button {
+
+.menu-navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 20px;
+    background: #173c30;
+    border-top: 1px solid #bda66a;
+    border-bottom: 1px solid #bda66a;
+}
+
+.menu-navegacao a {
+    display: inline-block;
+    padding: 10px 13px;
+    color: #f5f0df;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menu-navegacao a:hover {
+    background: #2d5945;
+    color: #f0d99b;
+}
+
+.menu-navegacao a:focus-visible {
+    outline: 2px solid #e5d5a4;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .menu-navegacao {
+        gap: 4px;
+        padding: 10px;
+    }
+
+    .menu-navegacao a {
+        padding: 9px 10px;
+        font-size: 0.9rem;
+    }
+}
+
         padding: 9px 11px;
     }
 }
