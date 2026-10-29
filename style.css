@@ -428,3 +428,199 @@ body.noturno {
         animation-iteration-count: 1 !important;
     }
 }
+
+
+/* ===== VITRINE DE LIVROS ===== */
+
+.vitrine-livros {
+    padding: 70px 8%;
+    background: var(--pergaminho);
+    color: var(--texto);
+}
+
+.vitrine-introducao {
+    max-width: 720px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.vitrine-detalhe {
+    color: var(--folha);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.vitrine-introducao h2 {
+    margin: 12px 0;
+    color: var(--floresta);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.vitrine-introducao > p:last-child {
+    color: var(--texto-suave);
+    line-height: 1.8;
+}
+
+.grade-livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.livro-card {
+    overflow: hidden;
+    background: var(--papel);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.livro-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(20, 40, 29, 0.16);
+}
+
+.capa-livro {
+    min-height: 290px;
+    margin: 16px;
+    padding: 25px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    text-align: center;
+    color: #fffdf6;
+    border: 2px solid var(--dourado);
+    outline: 1px solid rgba(255, 255, 255, 0.35);
+    outline-offset: -9px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.capa-livro span {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+.capa-livro h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.25;
+}
+
+.capa-livro small {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.capa-hobbit {
+    background: linear-gradient(145deg, #547044, #203d2c 75%);
+}
+
+.capa-aneis {
+    background: linear-gradient(145deg, #6c542c, #292b20 75%);
+}
+
+.capa-silmarillion {
+    background: linear-gradient(145deg, #355e70, #172f42 75%);
+}
+
+.capa-contos {
+    background: linear-gradient(145deg, #79513f, #39251f 75%);
+}
+
+.livro-info {
+    padding: 4px 22px 24px;
+}
+
+.livro-info h3 {
+    margin: 8px 0 10px;
+    color: var(--floresta);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.25rem;
+}
+
+.livro-info p {
+    min-height: 72px;
+    color: var(--texto-suave);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.livro-info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 11px 17px;
+    background: var(--floresta);
+    color: #fffdf6;
+    border: 1px solid var(--dourado);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.livro-info a:hover {
+    background: var(--dourado);
+    color: var(--floresta-profunda);
+}
+
+/* Adaptação para telas pequenas */
+
+@media (max-width: 600px) {
+    .vitrine-livros {
+        padding: 48px 6%;
+    }
+
+    .grade-livros {
+        grid-template-columns: 1fr;
+    }
+
+    .capa-livro {
+        min-height: 250px;
+    }
+
+    .livro-info p {
+        min-height: 0;
+    }
+}
+
+/* Vitrine no modo noturno */
+
+.noturno .vitrine-livros {
+    background: var(--floresta-profunda);
+    color: var(--pergaminho);
+}
+
+.noturno .vitrine-introducao h2,
+.noturno .livro-info h3 {
+    color: var(--dourado-claro);
+}
+
+.noturno .vitrine-detalhe {
+    color: var(--dourado);
+}
+
+.noturno .vitrine-introducao > p:last-child,
+.noturno .livro-info p {
+    color: #d0d8ce;
+}
+
+.noturno .livro-card {
+    background: #1b3529;
+    border-color: rgba(229, 213, 164, 0.3);
+}
+
+.noturno .livro-info a {
+    background: var(--dourado);
+    color: var(--floresta-profunda);
+}
+
+.noturno .livro-info a:hover {
+    background: var(--dourado-claro);
+}
