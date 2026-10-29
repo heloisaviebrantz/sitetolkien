@@ -13,7 +13,7 @@
     --tamanho-fonte: 16px;
 }
 
-{
+* {
     box-sizing: border-box;
 }
 
@@ -83,8 +83,12 @@ button:focus-visible {
     isolation: isolate;
     min-height: 340px;
     padding: 48px 24px;
-    display: flex;
-    align-items: center background-color: var(--floresta-profunda);
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fffdf6;
+    background-color: var(--floresta-profunda);
     background-image:
         linear-gradient(
             180deg,
