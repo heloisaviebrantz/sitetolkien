@@ -250,12 +250,10 @@ main {
     color: var(--dourado);
 }
 
-/* AMIZADE: TOLKIEN E C. S. LEWIS */
-
 .amizade {
     margin: 48px 0 8px;
     padding: clamp(24px, 5vw, 44px);
-    background: #e5eadf;
+    background: var(--papel);
     border: 1px solid rgba(49, 89, 67, 0.18);
     border-left: 4px solid var(--dourado);
     border-radius: 14px;
@@ -334,7 +332,7 @@ body.noturno {
 }
 
 .noturno .amizade {
-    background: #202f25;
+    background: var(--papel);
     border-color: var(--borda);
     border-left-color: var(--dourado);
 }
